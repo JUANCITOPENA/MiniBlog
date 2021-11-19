@@ -186,7 +186,7 @@ footer p{
 
 /* REGLA PARA EL FORMATO DEL CONTENEDOR PRINCIPAL  */
 .container{
-    width: 80%;
+    width: 95%;
     height: 100%;
     margin:0px auto;
     border-radius: 5px;
