@@ -6,36 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Y CSS INTRO</title>
     <meta name="author" content="ING. JUANCITO PEÑA" />
-    <meta
-      name="”description”"
-      content="MAQUETACION BASICA Y SEMANTICA DE HTML5 Y CSS3"
-    />
-    <meta
-      name="”keywords”"
-      content="MATERIA INTERACCION HUMANO COMPUTADOR-USABILIAD DE LA WEB"
-    />
+    <meta name="”description”" content="MAQUETACION BASICA Y SEMANTICA DE HTML5 Y CSS3"/>
+    <meta name="”keywords”" content="MATERIA INTERACCION HUMANO COMPUTADOR-USABILIAD DE LA WEB"/>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
     <!--CONTENDERO PRINCIPAL DE MI PAGINA-->
     <div class="container">
-      <!--ENCABEZADO-->
       <header>
         <h1>BIENVENIDOS A MI PAGINA WEB</h1>
       </header>
+      <!--ENCABEZADO-->
+   
+        <div class="w3-content w3-section">
+          <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlX9mbQnrCQr5PaYR6WZXF6J6YatLUdEahsA&usqp=CAU" style="width:100%">
+          <img class="mySlides" src="https://engineering.fb.com/wp-content/uploads/2012/12/javascript-illustration.png" style="width:100%">
+          <img class="mySlides" src="https://miracomohacerlo.com/wp-content/uploads/2021/02/bootstrap-illustration.jpg" style="width:100%">
+          <img class="mySlides" src="https://www.freetutorialsplus.com/php-tutorial/images/php-illustration.png" style="width:100%">
+          <img class="mySlides" src="https://haycanal.com/uploads/noticias/13769/Inteligencia_Artificial_Avanzada.jpg" style="width:100%">
+          <img class="mySlides" src="https://blog.desdelinux.net/wp-content/uploads/2019/05/wordpress-cms-contenido-wp-blog-desdelinux-830x475.jpg" style="width:100%">
+          <img class="mySlides" src="https://thumbs.dreamstime.com/t/binario-brain-banner-de-la-inteligencia-artificial-48028633.jpg" style="width:100%">
+          <img class="mySlides" src="https://www.sparklebox.co.uk/wp-content/uploads/1-4585.jpg" style="width:100%">
+          <img class="mySlides" src="https://img.freepik.com/free-vector/personal-computer-technologies-evolution-cartoon-banner_1441-3113.jpg?size=626&ext=jpg" style="width:100%">
+          <img class="mySlides" src="https://s3-ap-southeast-1.amazonaws.com/subscriber.images/the-learning-tree/wp-content/uploads/2019/09/30054842/2127_Sep19_SE_Evolution-of-Computers_Blog-Banner-01.jpg" style="width:100%">
+          <img class="mySlides" src="https://i.pinimg.com/originals/24/b3/2e/24b32e53341202e5f52bf1609468fd05.jpg" style="width:100%"> 
+        </div>
+     
+     
+     
       <!--NAVEGACION-->
       <nav>
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="sobremi.html">Sobre Mi</a></li>
-          <li><a href="index.html">Galeria</a></li>
-          <li><a href="index.html">Cursos</a></li>
-          <li><a href="index.html">Contactos</a></li>
+       <!--  <ul>
+          <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+          <li><a href="sobremi.html"><i class="fa fa-fw fa-user"></i>Sobre Mi</a></li>
+          <li><a href="galeria.html"><i class="fa fa-camera" aria-hidden="true"></i> Galeria</a></li>
+          <li><a href="cursos.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Cursos</a></li>
+          <li><a href="contactos.html"><i class="fa fa-fw fa-envelope"></i> Contactos</a></li>
         </ul>
+       -->
+        <div class="w3-bar w3-red">
+          <a href="index.html" class="w3-bar-item w3-button">Home</a>
+          <a href="sobremi.html" class="w3-bar-item w3-button w3-hide-small">Sobre Mi</a>
+          <a href="galeria.html" class="w3-bar-item w3-button w3-hide-small">Galeria</a>
+          <a href="cursos.html" class="w3-bar-item w3-button w3-hide-small">Cursos</a>
+          <a href="contactos.html" class="w3-bar-item w3-button w3-hide-small">Contactos</a>
+          <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+        </div>
+        
+        <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+          <a href="sobremi.html" class="w3-bar-item w3-button">Sobre Mi</a>
+          <a href="galeria.html" class="w3-bar-item w3-button">Galeria</a>
+          <a href="cursos.html" class="w3-bar-item w3-button">Curos</a>
+          <a href="contactos.html" class="w3-bar-item w3-button">Contactos</a>
+        </div>
+
       </nav>
       <!--SECCION DEL SECTION Y ARTICULOS-->
       <section id="contenido">
         <article class="parrafo">
+          <hr>
           <h2>¿Qué es la Interacción Humano-Computadora?</h2>
           <p>
             La disciplina que estudia cómo las personas interactúan con las
@@ -58,7 +89,7 @@
             sin fisuras posible.
           </p>
         </article>
-
+        <hr>
         <article class="parrafo1">
           <h2>Desarrollo Web</h2>
           <p>
@@ -71,22 +102,39 @@
           </p>
         </article>
         <article class="parrafo2">
-          <h2>Tecnologías frontend o del lado del cliente:</h2>
-
+  
+        
+          <h2>Tecnologías Frontend y Backend :</h2>
           <p>
-            <img src="imagenes/js.png" alt="JAVASCRIPT">
-            <strong>JavaScript:</strong> Al usar este lenguaje de programación
-            multiplataforma, es posible dar una mayor interactividad y dinamismo
-            a los sitios web. Y esto es así porque permite crear tanto
-            animaciones como objetos, localizar errores en formularios, cambiar
-            elementos web de manera intuitiva y crear cookies, etc. Además,
-            también permite desarrollar aplicaciones tan potentes como Facebook
-            o Twitter. Por esto, JavaScript es una de las tecnologías web más
-            usadas en la actualidad.
-            <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank" >Leer Mas....</a>
+            <img src="img/backend-frontend.jpg" alt="HTML">
+            <strong> ¿Qué es el  Front End?:</strong>
+          Front End es la parte de una aplicación que interactúa con los usuarios, es conocida como el lado del cliente.
+          Básicamente es todo lo que vemos en la pantalla cuando accedemos a un sitio web o aplicación: tipos de letra, colores,
+          adaptación para distintas pantallas(RWD), los efectos del ratón, teclado, movimientos, desplazamientos, efectos
+          visuales… y otros elementos que permiten navegar dentro de una página web. Este conjunto crea la experiencia del
+          usuario. <br>
+          <br>
+          Como hemos dicho, el desarrollador front end se encarga de la experiencia del usuario, es decir, en el momento en el que
+          este entra a una página web, debe ser capaz de navegar por ella, por lo que el usuario verá una interface sencilla de
+          usar, atractiva y funcional.
+          Un desarrollador front end debe conocer los siguientes lenguajes de programación: HTML5, CSS3, JavaScript, Jquery, Ajax.
+        </p>
+        <hr>
+          <p>
+          
+            <strong> ¿Qué es el backend?:</strong>
+            El Backend es en pocas palabras el área lógica de toda web, app, o programa. El Backend se refiere a la arquitectura
+            interna del sitio y asegura que todos los elementos funcionen de forma idónea. Y lo más importante, NO ES VISIBLE a los
+            ojos del usuario final, que muchas veces ni siquiera es consciente del reto que implica.
+            <br>
+            El Backend no tiene ningún elemento visual, sino que se refiere al área lógica de la web. Es la rama de arquitectura
+            interna del sitio, la función de ingeniería que los programadores desarrollamos, es la funcionalidad propia de la web.
+            No se ve pero está ahí y es vital para que la web funcione, mucho más que la tipografía y el copyright.
+            <a href="https://es.wikipedia.org/wiki/HTML5" target="_blank">Leer Mas....</a>
           </p>
+          <hr>
           <p>
-            <img src="imagenes/html.jfif" alt="HTML">
+            <img src="img/html.jpg" alt="HTML">
             <strong>HTML:</strong> Este es un lenguaje de programación usado para
             la creación de sitios web. Como las tecnologías evolucionan a pasos
             agigantados, HTML está en constante renovación, la versión actual es
@@ -101,8 +149,9 @@
             <a href="https://es.wikipedia.org/wiki/HTML5" target="_blank" >Leer Mas....</a>
             
           </p>
+          <hr>
           <p>
-            <img src="imagenes/css.png" alt="CSS">
+            <img src="img/css.png" alt="CSS">
             <strong>CSS:</strong> Es una de las tecnologías web a la que más recurren los
             programadores gráficos a la hora de desarrollar sus proyectos. Es un
             lenguaje de diseño gráfico que sirve, entre otras muchas funciones,
@@ -112,7 +161,21 @@
             para acotar y trazar el aspecto visual de las etiquetas generadas
             por el HTML.
             <a href="https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada" target="_blank" >Leer Mas....</a>
-          </p>s
+          </p>
+          <hr>
+          <p>
+            <img src="img/js.png" alt="JAVASCRIPT">
+            <strong>JavaScript:</strong> Al usar este lenguaje de programación
+            multiplataforma, es posible dar una mayor interactividad y dinamismo
+            a los sitios web. Y esto es así porque permite crear tanto
+            animaciones como objetos, localizar errores en formularios, cambiar
+            elementos web de manera intuitiva y crear cookies, etc. Además,
+            también permite desarrollar aplicaciones tan potentes como Facebook
+            o Twitter. Por esto, JavaScript es una de las tecnologías web más
+            usadas en la actualidad.
+            <a href="https://es.wikipedia.org/wiki/JavaScript" target="_blank" >Leer Mas....</a>
+          </p>
+        
         </article>
       </section>
 
@@ -120,15 +183,16 @@
 
       <!--SECCION DEL ASIDE -->
       <aside>
-        <img src="imagenes/html_animado.gif" alt="">
+        <img class="aside_img" src="img/html-gif.gif" alt="">
         <h2>Ofertas de Cursos HTML</h2>  
        <a href="https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/"  target="_blank">
-        <img src="https://i.pinimg.com/originals/b3/38/8d/b3388d949cc3a0fcc83dc678cae1c298.gif" alt="Oferta">
+        <img class="aside_img " src="https://i.pinimg.com/originals/b3/38/8d/b3388d949cc3a0fcc83dc678cae1c298.gif" alt="Oferta">
 
        </a>
 
+        <h3>Cada dia es Mejor que el Ayer</h3>
+        <img class="aside_img" src="img/exito.gif"  alt="">
         <h2>No Te Rindas Nuca</h2>
-        <img src="https://lh6.ggpht.com/_xxCk4QMvziE/Sa7pAu6pBII/AAAAAAAARwg/ZcE7DboUiQ8/[UNSET].gif?imgmax=800" alt="">
       </aside>
       <!--FIN DE LA SECCION DEL ASIDE -->
 
@@ -144,6 +208,39 @@
       <!--FIN FOOTER O PIE DE PAGINA-->
 
       <!--FIN DEL CONTENDERO PRINCIPAL DE MI PAGINA-->
+
+
+      <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!--MENU AMBURGUEZA-->
+    <script>
+      function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+    </script>
+
     </div>
   </body>
 </html>

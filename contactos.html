@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Y CSS INTRO</title>
+    <meta name="author" content="ING. JUANCITO PEÑA" />
+    <meta name="”description”" content="MAQUETACION BASICA Y SEMANTICA DE HTML5 Y CSS3"/>
+    <meta name="”keywords”" content="MATERIA INTERACCION HUMANO COMPUTADOR-USABILIAD DE LA WEB"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <!--CONTENDERO PRINCIPAL DE MI PAGINA-->
+    <div class="container">
+      <header>
+        <h1>BIENVENIDOS A MI PAGINA WEB</h1>
+      </header>
+      <!--ENCABEZADO-->
+      <div class="container">
+        <div class="w3-content w3-section">
+          <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlX9mbQnrCQr5PaYR6WZXF6J6YatLUdEahsA&usqp=CAU" style="width:100%">
+          <img class="mySlides" src="https://engineering.fb.com/wp-content/uploads/2012/12/javascript-illustration.png" style="width:100%">
+          <img class="mySlides" src="https://miracomohacerlo.com/wp-content/uploads/2021/02/bootstrap-illustration.jpg" style="width:100%">
+          <img class="mySlides" src="https://www.freetutorialsplus.com/php-tutorial/images/php-illustration.png" style="width:100%">
+          <img class="mySlides" src="https://haycanal.com/uploads/noticias/13769/Inteligencia_Artificial_Avanzada.jpg" style="width:100%">
+          <img class="mySlides" src="https://blog.desdelinux.net/wp-content/uploads/2019/05/wordpress-cms-contenido-wp-blog-desdelinux-830x475.jpg" style="width:100%">
+          <img class="mySlides" src="https://thumbs.dreamstime.com/t/binario-brain-banner-de-la-inteligencia-artificial-48028633.jpg" style="width:100%">
+          <img class="mySlides" src="https://www.sparklebox.co.uk/wp-content/uploads/1-4585.jpg" style="width:100%">
+          <img class="mySlides" src="https://img.freepik.com/free-vector/personal-computer-technologies-evolution-cartoon-banner_1441-3113.jpg?size=626&ext=jpg" style="width:100%">
+          <img class="mySlides" src="https://s3-ap-southeast-1.amazonaws.com/subscriber.images/the-learning-tree/wp-content/uploads/2019/09/30054842/2127_Sep19_SE_Evolution-of-Computers_Blog-Banner-01.jpg" style="width:100%">
+          <img class="mySlides" src="https://i.pinimg.com/originals/24/b3/2e/24b32e53341202e5f52bf1609468fd05.jpg" style="width:100%"> 
+        </div>
+      </div>
+     
+      <!--NAVEGACION-->
+      <nav>
+        <!--  <ul>
+           <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+           <li><a href="sobremi.html"><i class="fa fa-fw fa-user"></i>Sobre Mi</a></li>
+           <li><a href="galeria.html"><i class="fa fa-camera" aria-hidden="true"></i> Galeria</a></li>
+           <li><a href="cursos.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Cursos</a></li>
+           <li><a href="contactos.html"><i class="fa fa-fw fa-envelope"></i> Contactos</a></li>
+         </ul>
+        -->
+         <div class="w3-bar w3-red">
+           <a href="index.html" class="w3-bar-item w3-button">Home</a>
+           <a href="sobremi.html" class="w3-bar-item w3-button w3-hide-small">Sobre Mi</a>
+           <a href="galeria.html" class="w3-bar-item w3-button w3-hide-small">Galeria</a>
+           <a href="cursos.html" class="w3-bar-item w3-button w3-hide-small">Cursos</a>
+           <a href="contactos.html" class="w3-bar-item w3-button w3-hide-small">Contactos</a>
+           <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+         </div>
+         
+         <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+           <a href="sobremi.html" class="w3-bar-item w3-button">Sobre Mi</a>
+           <a href="galeria.html" class="w3-bar-item w3-button">Galeria</a>
+           <a href="cursos.html" class="w3-bar-item w3-button">Curos</a>
+           <a href="contactos.html" class="w3-bar-item w3-button">Contactos</a>
+         </div>
+ 
+       </nav>
+      <!--SECCION DEL SECTION Y ARTICULOS-->
+
+      <div class="clearfix">
+
+    </div>
+    <section id="contactos">
+        <h2 class="formulario" >Formulario de Contacto</h2>
+        <br>
+        <br>
+        <div class="container">
+            <form action="#">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Nombre</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Escriba Aqui Su nombre.">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Apellido</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Escriba Aqui su Apellido.">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Ciudad</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                  <option value="Santo Domingo">Santo Domingo</option>
+                  <option value="Santiago">Santiago</option>
+                  <option value="Azua">Azua</option>
+                  <option value="Santiago">La Vega</option>
+                  <option value="Azua">San Cristobal</option>
+                  <option value="Santiago">Higuey</option>
+                  <option value="Azua">Puerto Plata</option>
+                  <option value="Santiago">Samana</option>
+                  <option value="Azua">Bani</option>
+                </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Mensaje</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Deje su Mensaje Aqui" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+        </aside>
+
+
+      <!--PARA LIMPIAR LO FLOTADO EN MI PAGINA O ELEMENTO-->
+      <div class="clearfix"></div>
+
+      <!--FOOTER O PIE DE PAGINA-->
+
+      <footer>
+        <p>@2021, Ing. Juancito Peña</p>
+      </footer>
+
+      <!--FIN FOOTER O PIE DE PAGINA-->
+
+      <script src="menu-sliser.js"></script>
+      <!--FIN DEL CONTENDERO PRINCIPAL DE MI PAGINA-->
+    </div>
+  </body>
+</html>

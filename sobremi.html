@@ -10,38 +10,73 @@
   <meta name="”description”" content="MAQUETACION BASICA Y SEMANTICA DE HTML5 Y CSS3" />
   <meta name="”keywords”" content="MATERIA INTERACCION HUMANO COMPUTADOR-USABILIAD DE LA WEB" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
   <!--CONTENDERO PRINCIPAL DE MI PAGINA-->
   <div class="container">
-    <!--ENCABEZADO-->
     <header>
       <h1>BIENVENIDOS A MI PAGINA WEB</h1>
     </header>
+    <!--ENCABEZADO-->
+    <div class="container">
+      <div class="w3-content w3-section">
+        <img class="mySlides" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlX9mbQnrCQr5PaYR6WZXF6J6YatLUdEahsA&usqp=CAU" style="width:100%">
+        <img class="mySlides" src="https://engineering.fb.com/wp-content/uploads/2012/12/javascript-illustration.png" style="width:100%">
+        <img class="mySlides" src="https://miracomohacerlo.com/wp-content/uploads/2021/02/bootstrap-illustration.jpg" style="width:100%">
+        <img class="mySlides" src="https://www.freetutorialsplus.com/php-tutorial/images/php-illustration.png" style="width:100%">
+        <img class="mySlides" src="https://haycanal.com/uploads/noticias/13769/Inteligencia_Artificial_Avanzada.jpg" style="width:100%">
+        <img class="mySlides" src="https://blog.desdelinux.net/wp-content/uploads/2019/05/wordpress-cms-contenido-wp-blog-desdelinux-830x475.jpg" style="width:100%">
+        <img class="mySlides" src="https://thumbs.dreamstime.com/t/binario-brain-banner-de-la-inteligencia-artificial-48028633.jpg" style="width:100%">
+        <img class="mySlides" src="https://www.sparklebox.co.uk/wp-content/uploads/1-4585.jpg" style="width:100%">
+        <img class="mySlides" src="https://img.freepik.com/free-vector/personal-computer-technologies-evolution-cartoon-banner_1441-3113.jpg?size=626&ext=jpg" style="width:100%">
+        <img class="mySlides" src="https://s3-ap-southeast-1.amazonaws.com/subscriber.images/the-learning-tree/wp-content/uploads/2019/09/30054842/2127_Sep19_SE_Evolution-of-Computers_Blog-Banner-01.jpg" style="width:100%">
+        <img class="mySlides" src="https://i.pinimg.com/originals/24/b3/2e/24b32e53341202e5f52bf1609468fd05.jpg" style="width:100%"> 
+      </div>
+    </div>
+   
     <!--NAVEGACION-->
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobremi.html">Sobre Mi</a></li>
-        <li><a href="index.html">Galeria</a></li>
-        <li><a href="index.html">Cursos</a></li>
-        <li><a href="index.html">Contactos</a></li>
-      </ul>
-    </nav>
+      <!--  <ul>
+         <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+         <li><a href="sobremi.html"><i class="fa fa-fw fa-user"></i>Sobre Mi</a></li>
+         <li><a href="galeria.html"><i class="fa fa-camera" aria-hidden="true"></i> Galeria</a></li>
+         <li><a href="cursos.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Cursos</a></li>
+         <li><a href="contactos.html"><i class="fa fa-fw fa-envelope"></i> Contactos</a></li>
+       </ul>
+      -->
+       <div class="w3-bar w3-red">
+         <a href="index.html" class="w3-bar-item w3-button">Home</a>
+         <a href="sobremi.html" class="w3-bar-item w3-button w3-hide-small">Sobre Mi</a>
+         <a href="galeria.html" class="w3-bar-item w3-button w3-hide-small">Galeria</a>
+         <a href="cursos.html" class="w3-bar-item w3-button w3-hide-small">Cursos</a>
+         <a href="contactos.html" class="w3-bar-item w3-button w3-hide-small">Contactos</a>
+         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+       </div>
+       
+       <div id="demo" class="w3-bar-block w3-red w3-hide w3-hide-large w3-hide-medium">
+         <a href="sobremi.html" class="w3-bar-item w3-button">Sobre Mi</a>
+         <a href="galeria.html" class="w3-bar-item w3-button">Galeria</a>
+         <a href="cursos.html" class="w3-bar-item w3-button">Curos</a>
+         <a href="contactos.html" class="w3-bar-item w3-button">Contactos</a>
+       </div>
+
+     </nav>
     <!--SECCION DEL SECTION Y ARTICULOS-->
 
     <section id="contenido">
       <article class="parrafo">
-        <h2>JUANCITO PEÑA</h2>
+        <h2 class="titulo"> M.Eng. JUANCITO PEÑA</h2>
         <p>
           👨‍🎓 He pasado la mayor parte de mi vida estudiando y trabajando, adquiriendo bases muy solidades en
           Tecnologías, que me han permitido crecer profesional y personalmente, transmitiendo lo aprendido en todo lo
           que hago. Esto a lo largo del tiempo se ha traducido en una vida profesional llena de retos que gracias a mi
-          dedicación y mi formación autodidacta, han tenido éxito.</p>
+          dedicación, mi formación autodidacta, mis cursos, y certificaciones, se han reflajdo en éxitos.</p>
           <p>
           👩🏻‍💻 Soy un Profesional de Tecnología multiciplinario, con más de 15 años de experiencia trabajando con
-          Sistemas Integrales, CRM, y ERP, Orientados a Procesos Tecnológicos, Administrativos, Productivos y del sector
+          Sistemas Integrales, CRM, y ERP, Orientados a Procesos Tecnológicos, Administrativos, Productivos y del Sector
           de las Ventas. Soy un Apasionado de las Tecnologías, y los aportes a las mejoras Productivas, de Negocios y de
           Educación que brindan.</p>
           <p>
@@ -53,10 +88,20 @@
         </p>
       </article>
     </section>
-    <!--FIN DE LA SECCION DEL ASIDE -->
-    <aside class="aside">
-      <img src="imagenes/JUANCITOPENA.png" alt="">
+    <!--FIN DE LA SECCION -->
 
+    <aside class="aside">
+      <img src="img/ESTUDIO.jpg" alt="">
+
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+
+
+            
 
     </aside>
     <!--PARA LIMPIAR LO FLOTADO EN MI PAGINA O ELEMENTO-->
@@ -69,7 +114,7 @@
     </footer>
 
     <!--FIN FOOTER O PIE DE PAGINA-->
-
+    <script src="menu-sliser.js"></script>
     <!--FIN DEL CONTENDERO PRINCIPAL DE MI PAGINA-->
   </div>
 </body>

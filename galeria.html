@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML Y CSS INTRO</title>
+  <meta name="author" content="ING. JUANCITO PEÑA" />
+  <meta name="”description”" content="MAQUETACION BASICA Y SEMANTICA DE HTML5 Y CSS3" />
+  <meta name="”keywords”" content="MATERIA INTERACCION HUMANO COMPUTADOR-USABILIAD DE LA WEB" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style-gallery.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="js-galeria.js"></script>
+ 
+</head>
+
+<body>
+  <!--CONTENDERO PRINCIPAL DE MI PAGINA-->
+
+
+ 
+      <div class="container">
+        <header>
+          <h1>BIENVENIDOS A MI PAGINA WEB</h1>
+        </header>
+        <!--ENCABEZADO-->
+    <!--NAVEGACION-->
+    <nav>
+      <ul>
+           <li><a class="active" href="index.html"><i class="fa fa-fw fa-home"></i>Home</a></li>
+           <li><a href="sobremi.html"><i class="fa fa-fw fa-user"></i>Sobre Mi</a></li>
+           <li><a href="galeria.html"><i class="fa fa-camera" aria-hidden="true"></i> Galeria</a></li>
+           <li><a href="cursos.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Cursos</a></li>
+           <li><a href="contactos.html"><i class="fa fa-fw fa-envelope"></i> Contactos</a></li>
+         </ul>
+   
+ 
+       </nav>
+    <!--SECCION DEL SECTION Y ARTICULOS-->
+
+
+        <h2 style="text-align:center">Mis Imagenes Favoritas</h2>
+        <br>
+
+        <div class="row">
+            <div class="column">
+                <img src="img/1.gif" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/2.gif" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/3.gif" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/4.gif" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/5.gif" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/6.gif" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/7.gif" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/8.gif" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/9.gif" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/10.gif" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/11.gif" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+            </div>
+            <div class="column">
+                <img src="img/12.gif" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+            </div>
+        </div>
+
+        <!-- Fim Seccion de contenido de la Galeria-->
+
+        <!-- Empieza Seccion del Modal de la Galeria-->
+
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 12</div>
+                    <img src="img/1.gif" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 12</div>
+                    <img src="img/2.gif" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 12</div>
+                    <img src="img/3.gif" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 12</div>
+                    <img src="img/4.gif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">5 / 12</div>
+                    <img src="img/5.gif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">6 / 12</div>
+                    <img src="img/6.gif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">7 / 12</div>
+                    <img src="img/7.gif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">8 / 12</div>
+                    <img src="img/8.gif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">9 / 12</div>
+                    <img src="img/9.gif" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">10 / 12</div>
+                    <img src="img/10.gif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">11 / 12</div>
+                    <img src="img/11.gif" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">12 / 12</div>
+                    <img src="img/12.gif" style="width:100%">
+                </div>
+
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Fin Seccion del Modal de la Galeria-->
+
+
+                <!-- Empieza Seccion del Slider de Galeria-->
+
+                <div class="column">
+                    <img class="demo cursor" src="img/1.gif" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/2.gif" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/3.gif" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/4.gif" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/5.gif" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/6.gif" style="width:100%" onclick="currentSlide(6)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/7.gif" style="width:100%" onclick="currentSlide(7)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/8.gif" style="width:100%" onclick="currentSlide(8)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/9.gif" style="width:100%" onclick="currentSlide(9)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/10.gif" style="width:100%" onclick="currentSlide(10)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/11.gif" style="width:100%" onclick="currentSlide(11)" alt="Northern Lights">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="img/12.gif" style="width:100%" onclick="currentSlide(12)" alt="Northern Lights">
+                </div>
+            </div>
+        </div>
+        <!-- Fin Seccion del Slider de Galeria-->
+
+
+
+    <!--PARA LIMPIAR LO FLOTADO EN MI PAGINA O ELEMENTO-->
+    <div class="clearfix"></div>
+
+    <!--FOOTER O PIE DE PAGINA-->
+
+    <footer>
+      <p>@2021, Ing. Juancito Peña</p>
+    </footer>
+</div>
+    <!--FIN FOOTER O PIE DE PAGINA-->
+  
+    <!--FIN DEL CONTENDERO PRINCIPAL DE MI PAGINA-->
+  </div>
+</body>
+
+</html>
